@@ -1,0 +1,248 @@
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px 48px;
+}
+
+.screen.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.app-header {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  font-size: 1.9rem;
+  color: var(--color-primary-dark);
+  letter-spacing: 0.2px;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.demo-badge {
+  align-self: flex-start;
+  background: #fdf1dc;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 24px rgba(11, 79, 74, 0.08);
+}
+
+.progress-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.dot {
+  height: 8px;
+  flex: 1;
+  border-radius: 4px;
+  background: var(--color-border);
+}
+
+.dot-done {
+  background: var(--color-primary);
+  opacity: 0.5;
+}
+
+.dot-active {
+  background: var(--color-primary);
+}
+
+.step-count {
+  margin: 0 0 16px;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+}
+
+.field-label {
+  font-size: 1.4rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 14px;
+}
+
+.required-star {
+  color: var(--color-danger);
+}
+
+.explanation-box {
+  background: #f0f7f5;
+  border-left: 4px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+
+.explanation-box p {
+  margin: 0;
+  line-height: 1.55;
+  font-size: 1.02rem;
+}
+
+.audio-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.slow-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.input-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-bottom: 6px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1.05rem;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  margin-bottom: 22px;
+  background: #fff;
+  color: var(--color-text);
+}
+
+.text-input:focus {
+  border-color: var(--color-primary);
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.btn {
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.05s ease, opacity 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  flex: 1;
+}
+
+.btn-secondary {
+  background: #eef1f0;
+  color: var(--color-primary-dark);
+}
+
+.btn-accent {
+  background: var(--color-accent);
+  color: #3a2606;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1.5px solid var(--color-border);
+  color: var(--color-primary-dark);
+}
+
+.btn.small {
+  min-height: 36px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+.error-text {
+  color: var(--color-danger);
+  font-size: 0.92rem;
+  margin: 10px 0 18px;
+}
+
+.review-list {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.review-item.missing {
+  border-color: var(--color-danger);
+  background: #fdf0ec;
+}
+
+.review-value {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.success-icon {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
